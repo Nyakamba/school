@@ -17,7 +17,7 @@ const data = [
   {
     name: "Girls",
     count: 53,
-    fill: "#fae27c ",
+    fill: "#fae27c",
   },
   {
     name: "Boys",
