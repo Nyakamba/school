@@ -13,24 +13,21 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 const events = [
   {
     id: 1,
-    title: "lorem ipsum dolor sit amet",
+    title: "lorem ipsum dolor sit",
     time: "12:00 PM - 01:00 PM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    description: "Lorem ipsum dolor sit consectetur",
   },
   {
     id: 2,
-    title: "lorem ipsum dolor sit amet",
+    title: "lorem ipsum dolor sit",
     time: "12:00 PM - 01:00 PM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    description: "Lorem ipsum dolor sit consectetur",
   },
   {
     id: 3,
-    title: "lorem ipsum dolor sit amet",
+    title: "lorem ipsum dolor sit",
     time: "12:00 PM - 01:00 PM",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    description: "Lorem ipsum dolor sit consectetur",
   },
 ];
 
