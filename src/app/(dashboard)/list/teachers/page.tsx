@@ -59,13 +59,13 @@ const TeacherListPage = () => {
       key={item.id}
       className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-purpleLight"
     >
-      <td className="flex items-center gap-4 p-4">
+      <td className="flex items-center gap-2 sm:gap-4 p-2 sm:p-4">
         <Image
           src={item.photo}
           alt="teacher"
           width={40}
           height={40}
-          className="md:hidden xl:block w-10 h-10 rounded-full object-cover"
+          className="md:hidden xl:block w-6 h-6 sm:w-10 sm:h-10 rounded-full object-cover"
         />
         <div className="flex flex-col">
           <h3 className="font-semibold">{item.name}</h3>
@@ -75,8 +75,8 @@ const TeacherListPage = () => {
       <td className="hidden md:table-cell">{item.teacherId}</td>
       <td className="hidden md:table-cell">{item.subjects.join(", ")}</td>
       <td className="hidden md:table-cell">{item.classes.join(", ")}</td>
-      <td className="hidden md:table-cell">{item.phone}</td>
-      <td className="hidden md:table-cell">{item.address}</td>
+      <td className="hidden lg:table-cell">{item.phone}</td>
+      <td className="hidden lg:table-cell">{item.address}</td>
       <td>
         <div className="flex items-center gap-2">
           <Link href={`/list/teachers/${item.id}`}>
