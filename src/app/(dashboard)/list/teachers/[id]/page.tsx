@@ -1,9 +1,11 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
+import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { date } from "zod";
 
 const SingleTeacherPage = () => {
   return (
@@ -24,7 +26,27 @@ const SingleTeacherPage = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              <h1 className="text-xl font-semibold">Leonard Snyder</h1>
+              <div className="flex items-center gap-4">
+                <h1 className="text-xl font-semibold">Leonard Snyder</h1>
+                <FormModal
+                  table="teacher"
+                  type="update"
+                  data={{
+                    id: 1,
+                    username: "johndoe",
+                    firstName: "John",
+                    lastName: " Doe",
+                    email: "john@doe.com",
+                    password: "1223344455",
+                    img: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=2400",
+                    phone: "24345611890",
+                    address: "243 Main St, Anytown, USA",
+                    bloodType: "AB+",
+                    sex: "male",
+                    dateOfBirth: "1990-01-01",
+                  }}
+                />
+              </div>
               <p className="text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
