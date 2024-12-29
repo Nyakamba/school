@@ -24,6 +24,13 @@ interface FormModalProps {
   id?: number;
 }
 
+const forms: {
+  [key: string]: (type: "create" | "update", data?: any) => JSX.Element;
+} = {
+  teacher: (type, data) => <TeacherForm type={type} data={data} />,
+  student: (type, data) => <StudentForm type={type} data={data} />,
+};
+
 const FormModal = ({ table, type, data, id }: FormModalProps) => {
   const size = type === "create" ? "w-8 h-8" : "mw-7 h-7";
   const bgColor =
@@ -48,8 +55,10 @@ const FormModal = ({ table, type, data, id }: FormModalProps) => {
           Delete
         </button>
       </form>
+    ) : type === "create" || type === "update" ? (
+      forms[table](type, data)
     ) : (
-      <StudentForm type="create" data={data} />
+      "Form not found"
     );
   };
   return (
