@@ -63,7 +63,7 @@ model Parent {
   phone     String    @unique
   address   String
   createdAt DateTime  @default(now())
-  student   Student[]
+  students  Student[]
 }
 
 model Grade {
