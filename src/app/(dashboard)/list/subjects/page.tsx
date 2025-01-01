@@ -59,6 +59,8 @@ const SubjectListPage = async ({
 
   //URL params conditions
 
+  //URL params conditions
+
   const query: Prisma.SubjectWhereInput = {};
 
   if (queryParams) {
