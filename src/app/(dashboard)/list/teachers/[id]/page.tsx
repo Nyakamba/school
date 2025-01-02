@@ -145,7 +145,10 @@ const SingleTeacherPage = () => {
         <div className="bg-white p-4 rounded-md">
           <h1 className=" text-lg font-semibold">Shortcuts</h1>
           <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
-            <Link href="/" className="p-3 rounded-md bg-skyLight">
+            <Link
+              href={`/list/classes?supervisorId=${"teacher2"}`}
+              className="p-3 rounded-md bg-skyLight"
+            >
               Teacher &#39;s Classes
             </Link>
             <Link
