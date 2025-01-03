@@ -157,13 +157,22 @@ const SingleTeacherPage = () => {
             >
               Teacher &#39;s Students
             </Link>{" "}
-            <Link href="/" className="p-3 rounded-md bg-yellowLight">
+            <Link
+              href={`/list/lessons?teacherId=${"teacher2"} `}
+              className="p-3 rounded-md bg-yellowLight"
+            >
               Teacher &#39;s Lessons
             </Link>{" "}
-            <Link href="/" className="p-3 rounded-md bg-pink-50">
+            <Link
+              href={`/list/exams?teacherId=${"teacher2"} `}
+              className="p-3 rounded-md bg-pink-50"
+            >
               Teacher &#39;s Exams
             </Link>{" "}
-            <Link href="/" className="p-3 rounded-md bg-skyLight">
+            <Link
+              href={`/list/assignments?teacherId=${"teacher2"} `}
+              className="p-3 rounded-md bg-skyLight"
+            >
               Teacher &#39;s Assignments
             </Link>
           </div>
