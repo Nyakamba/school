@@ -205,4 +205,4 @@ const ResultListPage = async ({
 };
 
 export default ResultListPage;
-//export default ResultListPage;
+//export
